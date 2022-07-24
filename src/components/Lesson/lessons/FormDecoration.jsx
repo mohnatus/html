@@ -1,4 +1,5 @@
 export default function Component() {
-    return <div></div>;
+    return <div>label, legend, fieldset
+    </div>;
   }
   

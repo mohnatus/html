@@ -182,7 +182,7 @@ export const course = [
       },
       {
         name: "Формы",
-        id: lessons.FORM,
+        id: lessons.FORMS,
       },
 
       {

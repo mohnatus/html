@@ -1,4 +1,7 @@
 export default function Component() {
-    return <div></div>;
+    return <div>Валидатор - соответствие стандарту
+    зачем нужен
+    примеры ошибок
+    </div>;
   }
   

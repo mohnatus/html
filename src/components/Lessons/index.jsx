@@ -23,11 +23,12 @@ export function ModuleLesson({ lesson, index }) {
   );
 }
 
-export function ModuleBlock({ module, moduleIndex }) {
+export function ModuleBlock({ module, index }) {
   return (
-    <div className={styles.Module}>
-      {module.lessons.map((l, lIndex) => (
-        <ModuleLesson lesson={l} index={moduleIndex + lIndex + 1} key={l.id} />
+    <div className={styles.Module} title={module.name}>
+      <div className={styles.ModuleIndex}>{index + 1}</div>
+      {module.lessons.map((l) => (
+        <ModuleLesson lesson={l} key={l.id} />
       ))}
     </div>
   );
@@ -37,7 +38,7 @@ export function Lessons() {
   return (
     <div className={styles.Container}>
       {course.map((m, mIndex) => (
-        <ModuleBlock module={m} moduleIndex={mIndex} key={m.id} />
+        <ModuleBlock module={m} index={mIndex} key={m.id} />
       ))}
     </div>
   );

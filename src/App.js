@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Lesson } from "./components/Lesson";
+import { Lessons } from "./components/Lessons";
+import { AppContextProvider, AppDispatchContextProvider } from "./app/context";
 
 function App() {
+  const [activeLesson, setActiveLesson ] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppDispatchContextProvider value={setActiveLesson}>
+      <AppContextProvider value={activeLesson}>
+
+        <Lessons />
+
+        <Lesson  />
+
+      </AppContextProvider>
+    </AppDispatchContextProvider>
   );
 }
 

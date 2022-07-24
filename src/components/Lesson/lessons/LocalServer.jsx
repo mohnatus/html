@@ -1,4 +1,4 @@
-export function LocalServer() {
+export default function Component() {
   return (
     <div>
       1. Обычно для соединения браузера с сервером требуется интернет. Это так

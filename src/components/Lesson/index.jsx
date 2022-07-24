@@ -1,15 +1,7 @@
 import { useAppContext } from "app/context";
-import * as lessons from "data/lessons";
+import { lessonComponents } from "./lessons";
 
-import { HowSiteWorks } from "./lessons/HowSiteWorks";
-import { LocalServer } from "./lessons/LocalServer";
-
-import  styles from './style.module.scss';
-
-const lessonComponents = {
-  [lessons.HOW_SITE_WORKS]: HowSiteWorks,
-  [lessons.LOCAL_SERVER]: LocalServer,
-};
+import styles from "./style.module.scss";
 
 export function Lesson() {
   const lessonId = useAppContext();
@@ -19,7 +11,9 @@ export function Lesson() {
     return null;
   }
 
-  return <div className={styles.Container}>
-    <Component className={styles.Content} />
-  </div>;
+  return (
+    <div className={styles.Container}>
+      <Component className={styles.Content} />
+    </div>
+  );
 }

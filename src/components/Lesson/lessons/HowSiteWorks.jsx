@@ -1,4 +1,4 @@
-export function HowSiteWorks() {
+export default function Component() {
   return (
     <div>
       1. Сайт это набор текстовых документов. Все в интернете - это текст.

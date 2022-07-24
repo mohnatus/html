@@ -1,0 +1,29 @@
+.Container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Module {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.Lesson {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Active {
+  border: 2px solid black;
+}

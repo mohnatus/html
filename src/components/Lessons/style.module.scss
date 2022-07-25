@@ -6,17 +6,19 @@
 }
 
 .Module {
-  display: flex;
-  flex-wrap: wrap;
   border: 1px solid black;
   margin: 5px;
   padding: 5px;
   position: relative;
 }
 
-.ModuleIndex {
-  position: absolute;
-  bottom: 0;
+.ModuleName {
+  margin-bottom: 5px;
+}
+
+.ModuleLessons {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Lesson {

@@ -1,10 +1,9 @@
-import { useAppContext } from "app/context";
+import { useActiveLessonContext } from "app/useActiveLessonContext";
 import { lessonComponents } from "./lessons";
-
 import styles from "./style.module.scss";
 
 export function Lesson() {
-  const lessonId = useAppContext();
+  const lessonId = useActiveLessonContext();
   const Component = lessonComponents[lessonId];
 
   if (!Component) {

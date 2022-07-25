@@ -3,19 +3,19 @@ import { createContext, useContext } from "react";
 const Context = createContext();
 const DispatchContext = createContext();
 
-export function useAppContext() {
+export function useActiveLessonContext() {
   return useContext(Context);
 }
 
-export function useAppDispatchContext() {
+export function useActiveLessonDispatchContext() {
   return useContext(DispatchContext);
 }
 
-export function AppContextProvider({ value, children }) {
+export function ActiveLessonContextProvider({ value, children }) {
   return <Context.Provider value={value}>{children}</Context.Provider>;
 }
 
-export function AppDispatchContextProvider({ value, children }) {
+export function ActiveLessonDispatchContextProvider({ value, children }) {
   return (
     <DispatchContext.Provider value={value}>
       {children}

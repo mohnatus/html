@@ -1,11 +1,13 @@
-import { useAppContext, useAppDispatchContext } from "app/context";
+import {
+  useActiveLessonContext,
+  useActiveLessonDispatchContext,
+} from "app/useActiveLessonContext";
 import { course } from "data/course";
-
 import styles from "./style.module.scss";
 
 export function ModuleLesson({ lesson, index }) {
-  const dispatch = useAppDispatchContext();
-  const activeLesson = useAppContext();
+  const dispatch = useActiveLessonDispatchContext();
+  const activeLesson = useActiveLessonContext();
 
   const classes = [
     styles.Lesson,

@@ -102,6 +102,7 @@ export const courseLessons = {
   [lessons.HTML_INTRO]: {
     name: "Знакомство с HTML",
     id: lessons.HTML_INTRO,
+    tags: ["b"],
   },
   [lessons.CODE_EDITOR]: {
     name: "Редактор кода",
@@ -110,18 +111,22 @@ export const courseLessons = {
   [lessons.TEXT_STYLE_TAGS]: {
     name: "Теги, изменяющие стиль текста",
     id: lessons.TEXT_STYLE_TAGS,
+    tags: ["i", "u", "del", "small", "sub", "sup", "code"],
   },
   [lessons.LINE_BREAKS]: {
     name: "Абзацы и перенос строки",
     id: lessons.LINE_BREAKS,
+    tags: ["p", "br"],
   },
   [lessons.HEADERS]: {
     name: "Заголовки",
     id: lessons.HEADERS,
+    tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
   },
   [lessons.LISTS]: {
     name: "Списки",
     id: lessons.LISTS,
+    tags: ["ol", "ul", "li"],
   },
   [lessons.TAGS_ATTRIBUTES]: {
     name: "Атрибуты тегов",
@@ -130,6 +135,7 @@ export const courseLessons = {
   [lessons.LINKS]: {
     name: "Ссылки",
     id: lessons.LINKS,
+    tags: ["a"],
   },
   [lessons.ADDRESSES]: {
     name: "Абсолютные и относительные адреса",
@@ -138,10 +144,12 @@ export const courseLessons = {
   [lessons.IMAGES]: {
     name: "Изображения",
     id: lessons.IMAGES,
+    tags: ["img"],
   },
-  [lessons.IMAGES]: {
+  [lessons.VIDEO]: {
     name: "Видео",
     id: lessons.IMAGES,
+    tags: ["video"],
   },
   [lessons.HTML_HISTORY]: {
     name: "Развитие HTML",
@@ -158,14 +166,17 @@ export const courseLessons = {
   [lessons.PAGE_STRUCTURE]: {
     name: "Структура страницы",
     id: lessons.PAGE_STRUCTURE,
+    tags: ["html", "body", "head"],
   },
   [lessons.SERVICE_TAGS]: {
     name: "Служебные теги",
     id: lessons.SERVICE_TAGS,
+    tags: ["title", "meta"],
   },
   [lessons.DOCTYPE]: {
     name: "DOCTYPE",
     id: lessons.DOCTYPE,
+    tags: ["doctype"],
   },
   [lessons.MARKUP_VALIDATION]: {
     name: "Валидация разметки",
@@ -182,6 +193,7 @@ export const courseLessons = {
   [lessons.TABLES]: {
     name: "Таблицы",
     id: lessons.TABLES,
+    tags: ["table", "tbody", "thead", "tfoot", "tr", "td", "th", "caption"],
   },
   [lessons.TABLE_ATTRIBUTES]: {
     name: "Атрибуты таблиц",
@@ -190,10 +202,12 @@ export const courseLessons = {
   [lessons.QUOTES]: {
     name: "Цитаты",
     id: lessons.QUOTES,
+    tags: ["q", "blockquote", "cite"],
   },
   [lessons.BLOCK_AND_INLINE]: {
     name: "Блочные и строчные теги",
     id: lessons.BLOCK_AND_INLINE,
+    tags: ["div", "span"],
   },
   [lessons.GLOBAL_ATTRIBUTES]: {
     name: "Глобальные атрибуты",
@@ -202,10 +216,12 @@ export const courseLessons = {
   [lessons.SEMANTICS]: {
     name: "Семантика тегов",
     id: lessons.SEMANTICS,
+    tags: ["strong", "em"],
   },
   [lessons.SEMANTIC_BLOCKS]: {
     name: "Семантические блочные теги",
     id: lessons.SEMANTIC_BLOCKS,
+    tags: ["header", "footer", "article", "section", "aside", "nav", "main"],
   },
   [lessons.ACCESSIBILITY]: {
     name: "Семантика и доступность",
@@ -214,6 +230,7 @@ export const courseLessons = {
   [lessons.SEMANTIC_MEDIA]: {
     name: "Семантическое оформление медиа-контента",
     id: lessons.SEMANTIC_MEDIA,
+    tags: ["figure", "figcaption"],
   },
   [lessons.ARIA]: {
     name: "ARIA",
@@ -226,6 +243,7 @@ export const courseLessons = {
   [lessons.BUTTONS]: {
     name: "Кнопки",
     id: lessons.BUTTONS,
+    tags: ["button", "input"],
   },
   [lessons.INPUTS]: {
     name: "Поля ввода",
@@ -238,11 +256,13 @@ export const courseLessons = {
   [lessons.FORMS]: {
     name: "Формы",
     id: lessons.FORMS,
+    tags: ["form"],
   },
 
   [lessons.TEXTAREAS]: {
     name: "Многострочные поля",
     id: lessons.TEXTAREAS,
+    tags: ['textarea']
   },
   [lessons.CHECKBOXES]: {
     name: "Чекбоксы",
@@ -259,14 +279,17 @@ export const courseLessons = {
   [lessons.SELECTS]: {
     name: "Селекты",
     id: lessons.SELECTS,
+    tags: ["select"],
   },
   [lessons.DATALIST]: {
     name: "Автокомплит",
     id: lessons.DATALIST,
+    tags: ["datalist"],
   },
   [lessons.FORM_DECORATION]: {
     name: "Оформление форм",
     id: lessons.FORM_DECORATION,
+    tags: ["label", "legend", "fieldset"],
   },
   [lessons.FORMATTED_TEXT]: {
     name: "Форматированный текст",

@@ -34,6 +34,11 @@ export function Lesson() {
   return (
     <div className={styles.Container}>
       <h1>{lesson.name}</h1>
+
+      {lesson.tags && lesson.tags.length && (
+        <div className={styles.Tags}>Изучим теги: <b>{lesson.tags.join(", ")}</b></div>
+      )}
+
       <Component className={styles.Content} />
       <div>
         <button disabled={!prevLesson} onClick={toPrev}>

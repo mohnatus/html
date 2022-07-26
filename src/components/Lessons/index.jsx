@@ -33,7 +33,7 @@ export function ModuleBlock({ module, index }) {
       </div>
       <div className={styles.ModuleLessons}>
         {module.lessons.map((l) => (
-          <ModuleLesson lesson={l} key={l.id} />
+          <ModuleLesson lesson={l} key={l} />
         ))}
       </div>
     </div>

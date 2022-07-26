@@ -2,11 +2,11 @@ import {
   useActiveLessonContext,
   useActiveLessonDispatchContext,
 } from "app/useActiveLessonContext";
-import { courseLessons } from "data/course";
+import { courseModules, courseLessons } from "data/course";
 import { lessonComponents } from "./lessons";
 import styles from "./style.module.scss";
 
-const lessons = Object.keys(courseLessons);
+const lessons = courseModules.reduce((arr, m) => [...arr, ...m.lessons], []);
 
 export function Lesson() {
   const lessonId = useActiveLessonContext();

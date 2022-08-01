@@ -16,7 +16,6 @@ import Images from "./Images";
 import Video from "./Video";
 
 import HTMLHistory from "./HTMLHistory";
-import Standarts from "./Standarts";
 import DevTools from "./DevTools";
 import PageStructure from "./PageStructure";
 import ServiceTags from "./ServiceTags";
@@ -71,7 +70,6 @@ export const lessonComponents = {
   [lessons.VIDEO]: Video,
 
   [lessons.HTML_HISTORY]: HTMLHistory,
-  [lessons.STANDARTS]: Standarts,
   [lessons.DEV_TOOLS]: DevTools,
   [lessons.PAGE_STRUCTURE]: PageStructure,
   [lessons.SERVICE_TAGS]: ServiceTags,

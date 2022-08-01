@@ -29,7 +29,6 @@ export const courseModules = [
     id: modules.HTML_RULES,
     lessons: [
       lessons.HTML_HISTORY,
-      lessons.STANDARTS,
       lessons.DEV_TOOLS,
       lessons.PAGE_STRUCTURE,
       lessons.SERVICE_TAGS,
@@ -154,10 +153,6 @@ export const courseLessons = {
   [lessons.HTML_HISTORY]: {
     name: "Развитие HTML",
     id: lessons.HTML_HISTORY,
-  },
-  [lessons.STANDARTS]: {
-    name: "Стандарты и браузеры",
-    id: lessons.STANDARTS,
   },
   [lessons.DEV_TOOLS]: {
     name: "Инструменты разработчика",

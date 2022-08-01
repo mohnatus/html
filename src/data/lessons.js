@@ -14,7 +14,6 @@ export const IMAGES = "images";
 export const VIDEO = "video";
 
 export const HTML_HISTORY = "html-history";
-export const STANDARTS = "standarts";
 export const DEV_TOOLS = "dev-tools";
 export const PAGE_STRUCTURE = "page-structure";
 export const SERVICE_TAGS = "service-tags";

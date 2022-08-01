@@ -50,3 +50,4 @@ export const FORM_DECORATION = "form-decoration";
 export const FORMATTED_TEXT = "formatted-text";
 export const TAGS_LIST = "tags-list";
 export const SPECIAL_CHARACTERS = "special-characters";
+export const META_TAGS = "meta-tags";

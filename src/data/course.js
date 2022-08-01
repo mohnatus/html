@@ -83,6 +83,7 @@ export const courseModules = [
     id: modules.OPTIONALLY,
     lessons: [
       lessons.FORMATTED_TEXT,
+      lessons.META_TAGS,
       lessons.TAGS_LIST,
       lessons.SPECIAL_CHARACTERS,
     ],
@@ -257,7 +258,7 @@ export const courseLessons = {
   [lessons.TEXTAREAS]: {
     name: "Многострочные поля",
     id: lessons.TEXTAREAS,
-    tags: ['textarea']
+    tags: ["textarea"],
   },
   [lessons.CHECKBOXES]: {
     name: "Чекбоксы",
@@ -286,9 +287,14 @@ export const courseLessons = {
     id: lessons.FORM_DECORATION,
     tags: ["label", "legend", "fieldset"],
   },
+
   [lessons.FORMATTED_TEXT]: {
     name: "Форматированный текст",
     id: lessons.FORMATTED_TEXT,
+  },
+  [lessons.META_TAGS]: {
+    name: "Мета-теги",
+    id: lessons.META_TAGS,
   },
   [lessons.TAGS_LIST]: {
     name: "Обзор тегов",

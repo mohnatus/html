@@ -36,7 +36,9 @@ export function Lesson() {
       <h1>{lesson.name}</h1>
 
       {lesson.tags && lesson.tags.length && (
-        <div className={styles.Tags}>Изучим теги: <b>{lesson.tags.join(", ")}</b></div>
+        <div className={styles.Tags}>
+          Изучим теги: <b>{lesson.tags.join(", ")}</b>
+        </div>
       )}
 
       <Component className={styles.Content} />

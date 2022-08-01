@@ -52,6 +52,7 @@ import FormDecoration from "./FormDecoration";
 import FormattedText from "./FormattedText";
 import TagsList from "./TagsList";
 import SpecialCharacters from "./SpecialCharacters";
+import MetaTags from "./MetaTags";
 
 export const lessonComponents = {
   [lessons.HOW_SITE_WORKS]: HowSiteWorks,
@@ -106,4 +107,5 @@ export const lessonComponents = {
   [lessons.FORMATTED_TEXT]: FormattedText,
   [lessons.TAGS_LIST]: TagsList,
   [lessons.SPECIAL_CHARACTERS]: SpecialCharacters,
+  [lessons.META_TAGS]: MetaTags,
 };
